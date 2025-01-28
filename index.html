@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portofolio Pribadi</title>
+		<!-- Link ke Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Link ke file CSS Kustom -->
+		<style>
+			/* Warna utama dan warna kedua */
+			:root {
+				--primary-color: #ffffff; /* Putih */
+				--secondary-color: #b39ddb; /* Ungu Pastel */
+			}
+
+			body {
+				font-family: "Arial", sans-serif;
+				background-color: var(--primary-color);
+				color: #333;
+			}
+
+			.navbar {
+				background-color: var(--primary-color);
+			}
+
+			.navbar-brand,
+			.nav-link {
+				color: var(--secondary-color) !important;
+			}
+
+			.nav-link:hover {
+				color: #5e35b1 !important;
+			}
+
+			.hero {
+				background-color: var(--secondary-color);
+				color: white;
+				padding: 100px 0;
+			}
+
+			.hero .btn {
+				background-color: #5e35b1;
+				color: white;
+			}
+
+			.about,
+			.contact {
+				background-color: var(--primary-color);
+			}
+
+			.projects {
+				background-color: var(--primary-color);
+			}
+
+			.card {
+				border: 1px solid #ddd;
+			}
+
+			.card-title {
+				color: var(--secondary-color);
+			}
+
+			.card-body a {
+				background-color: var(--secondary-color);
+				color: white;
+			}
+
+			.card-body a:hover {
+				background-color: #5e35b1;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Portofolio</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#about"
+								>Tentang Saya</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Proyek</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Kontak</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="hero text-center py-5" id="hero">
+			<div class="container">
+				<h1 class="display-4">Halo, Saya [Nama Anda]</h1>
+				<p class="lead">
+					Saya seorang developer web yang berfokus pada pengalaman pengguna dan
+					desain responsif.
+				</p>
+				<a href="#contact" class="btn btn-primary btn-lg">Hubungi Saya</a>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section class="about py-5" id="about">
+			<div class="container text-center">
+				<h2>Tentang Saya</h2>
+				<p>
+					Saya seorang pengembang web yang memiliki pengalaman dalam HTML, CSS,
+					JavaScript, dan berbagai framework seperti Bootstrap dan React. Saya
+					sangat tertarik untuk membuat aplikasi web yang user-friendly dan
+					responsif.
+				</p>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section class="projects py-5 bg-light" id="projects">
+			<div class="container">
+				<h2 class="text-center">Proyek</h2>
+				<div class="row">
+					<!-- Proyek 1 -->
+					<div class="col-md-4">
+						<div class="card">
+							<img
+								src="https://via.placeholder.com/400"
+								class="card-img-top"
+								alt="Project 1"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Proyek 1</h5>
+								<p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+								<a href="#" class="btn btn-outline-primary">Lihat Proyek</a>
+							</div>
+						</div>
+					</div>
+					<!-- Proyek 2 -->
+					<div class="col-md-4">
+						<div class="card">
+							<img
+								src="https://via.placeholder.com/400"
+								class="card-img-top"
+								alt="Project 2"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Proyek 2</h5>
+								<p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+								<a href="#" class="btn btn-outline-primary">Lihat Proyek</a>
+							</div>
+						</div>
+					</div>
+					<!-- Proyek 3 -->
+					<div class="col-md-4">
+						<div class="card">
+							<img
+								src="https://via.placeholder.com/400"
+								class="card-img-top"
+								alt="Project 3"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Proyek 3</h5>
+								<p class="card-text">Deskripsi singkat tentang proyek ini.</p>
+								<a href="#" class="btn btn-outline-primary">Lihat Proyek</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section class="contact py-5" id="contact">
+			<div class="container text-center">
+				<h2>Kontak</h2>
+				<p>
+					Jika Anda tertarik untuk bekerja sama, Anda bisa menghubungi saya
+					melalui email atau media sosial berikut:
+				</p>
+				<p>Email: <a href="mailto:email@domain.com">email@domain.com</a></p>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="text-center py-4 bg-dark text-white">
+			<p>&copy; 2025 [Nama Anda]. Semua Hak Dilindungi.</p>
+		</footer>
+
+		<!-- Link ke Bootstrap JS dan Popper.js -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
